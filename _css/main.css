@@ -1,0 +1,367 @@
+.row {
+	display: flex;
+	flex-direction: row;
+}
+.column{
+	display: flex;
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	color: #D14039;
+}
+
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	background: url('../_images/camping.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#header{
+	/*background: url('../_images/camping.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;*/
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#search{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#explore-more, #tagline{
+	color: #fff;
+	align-self: center;
+	text-shadow: 2px 2px 5px #000;
+	/*font-family: 'Shadows Into Light', cursive;*/
+	font-family: 'Indie Flower', cursive;
+	text-align: center;
+}
+
+#explore-more {
+	font-size: 60pt;
+	margin: 0 0.2em;
+}
+
+#tagline {
+	font-size: 20pt;
+	text-shadow: 0px 0px 10px #000;
+	margin: 0 1em;
+}
+
+select::-ms-expand {
+    display: none;
+}
+.select {
+	background: url("../_images/double-arrow.png") no-repeat right;
+	background-position: 28.5em;
+	background-color: white;
+	background-size: 30px;
+	-webkit-appearance: none;
+	height: 3em;
+	width: 30em;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.25em; 
+    font-size: 16pt;
+    padding-left: 2em;
+    box-shadow: 1px 1px 5px #000;
+}
+.submit{
+	margin: 1em; 
+	color: #fff;
+	background: none;
+	height: 3em;
+	padding: 0 2em; 
+    border: 2.5pt solid;
+    border-color: #fff;
+    border-color: rgba(255,255,255,0.7);
+    cursor:pointer;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.25em;
+    font-size: 16pt;
+    text-shadow: 1px 1px 5px #000;
+    -webkit-box-shadow: 
+	1px 1px 5px #000, 
+	inset 1px 1px 5px #000;
+	-moz-box-shadow: 
+	1px 1px 5px #000, 
+	inset 1px 1px 5px #000;
+	-o-box-shadow: 
+	1px 1px 5px #000, 
+	inset 1px 1px 5px #000;
+	box-shadow: 
+	1px 1px 5px #000, 
+	inset 1px 1px 5px #000;
+}
+.submit:hover{
+	color: #fff;
+	background-color: #D14039;
+	background-color: rgba(255,255,255,0.4);
+	border-color:  #D14039;
+	border-color: rgba(255,255,255,1);
+}
+.toggle {
+	display: flex;
+	align-items: center;
+	align-self: center;
+	padding: 0em 1em;
+}
+@media screen and (max-width: 795px){
+	.toggle{
+		flex-direction: column;
+	}
+	.toggle > .submit, .select{
+		width: 100%;
+		text-align: center;
+	}
+}
+option{
+	font-size: 20pt;
+}
+#content{
+	min-height: 100vh;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background: #fff;
+	background: rgba(255,255,255,0.8);
+	background-repeat: no-repeat;
+	padding: 2em;
+}
+@media screen and (max-width: 715px){
+	#content-main{
+		flex-direction: column;
+	}
+}
+
+.siteHeader {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#feature-icons {
+	display: flex;
+	flex-direction: row;
+	margin-left: 1em;
+}
+
+.icon {
+	height: 1em;
+	margin-right: 0.25em
+}
+
+#filter{
+	max-height: 400px;
+	min-width: 200px;
+	max-width: 500px;
+	background-color: #fff ;
+	background-color: rgba(255,255,255,0.3);
+	border: 2pt #000 solid;
+	/*#1F3D03;*/
+	margin: 1em;
+	padding: 1em;
+	display: flex;
+	justify-content: space-around;
+	/*flex-grow: 1;*/
+}
+#filter > * {
+	margin-bottom: 1em
+}
+#filter .submit {
+	margin: 0;
+	color: #000;
+	border: 2pt #000 solid;
+	font-size: 14pt;
+	box-shadow: none;
+	text-shadow: none;
+}
+#filter .submit:hover {
+	color: #fff;
+	background: #000;
+}
+#searchBar{
+	background: url("../_images/search.png") no-repeat left;
+	background-size: 20px;
+	background-position: 0.5em;
+	padding: 0 0 0 2em;
+}
+
+#trailBar{
+	background: url("../_images/double-arrow.png") no-repeat right;
+	background-size: 20px;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+#searchBar, #trailBar{
+	-webkit-appearance: none;
+	background-color: none;
+	height: 2.5em;
+    border: 2pt #000 solid;
+    cursor:pointer;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.25em; 
+    font-size: 12pt;	
+}
+#checkboxes input[type=checkbox]{
+	margin-right: 1em;
+	border: 2pt #000 solid;
+}
+.trail > .site {
+	margin-left: 2em;
+}
+.feat > .site {
+	margin-left: 2em;
+}
+#results{
+	min-width: 400px;
+	margin: 0 2em;
+	flex-grow: 3;
+}
+
+#results .siteHeader {
+	margin-left: 1em;
+}
+
+#results .siteHeader h2, h3{
+	margin: 0.25em auto;
+}
+
+#results p {
+	margin-left: 2em;
+}
+
+#checkboxes input{
+	margin-left: 1em;
+}
+#footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 2em;
+}
+#footer a{
+	text-decoration: none;
+	color: #000;
+}
+
+#footer form{
+	/*border: 2pt solid #000;*/
+	margin: 5em 1em 2em 1em;
+	border-radius: 0.25em;
+}
+
+.error{
+	font-size: 10pt;
+	color: red;
+}
+
+#backToTop{
+	border: 2pt solid #000;
+	padding: 0 1em;
+	margin-top: 2em;
+	border-radius: 0.25em;
+}
+
+#backToTop:hover{
+	color: #fff;
+	background-color: #000;
+}
+
+#reviewSite{
+	background: url("../_images/tent.png") no-repeat left;
+	background-size: 20px;
+	background-position: 0.5em;
+	padding-left: 2em;
+	background-color: none;
+	-webkit-appearance: none;
+	height: 2.5em;
+    border: 2pt #000 solid;
+    cursor:pointer;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.25em; 
+    font-size: 12pt;
+    width: 465px;
+}
+#reviewText{
+	background: none;
+	-webkit-appearance: none;
+	width: 30em;
+	height: 9em;
+	margin: 1em 0;
+	padding: 0.5em;
+    border: 2pt #000 solid;
+    cursor:pointer;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.25em; 
+    font-size: 12pt;
+}
+
+#reviewSubmit { 
+	color: #000;
+	background: none;
+	height: 3em;
+	padding: 0 2em; 
+    border: 2pt solid;
+    border-color: #000;
+    cursor:pointer;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    font-size: 16pt;
+    width: 500px;
+}
+
+#reviewSubmit:hover {
+	color: #fff;
+	background-color: #000;
+}
+
+#review-results{
+	margin: 2em;
+	width: 90%;
+	align-self: center;
+}
+
+#review-results p{
+	margin-left: 2em;
+}
+
+.review-button {
+	color: #000;
+	border-color: #000;
+	text-shadow: none;
+	box-shadow: none;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	height: 2em;
+}
+
+.review-button:hover {
+	color: #fff;
+	border-color: #000;
+	background-color: #000;
+}
+
+.share {
+	align-self: center;
+}
